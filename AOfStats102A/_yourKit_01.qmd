@@ -1,0 +1,81 @@
+---
+title: "The \"A\" of Statistics II (and III)"
+subtitle: "Mini Workshop"
+author: "Bryan Mui - UID 506021334"
+date: today
+date-format: long
+self-contained: true
+format: 
+  pdf:
+    number-sections: true
+    keep-tex: true
+---
+
+## Introduction
+
+We assume you have already viewed a "client interview" (or, client discovery) video featuring Professor Esfandiari and Dr. Rootman.
+
+This assignment is an individual submission which counts for two individual assignments. For this part, please read Ruland's First and Second Questions in the book \`\`Guide for the New Statistical Consultant".
+
+## Your Work
+
+Make sure to include your name on your submission. Your student ID is not necessary.
+
+Please submit answers as PDF output (include the scripts that produced them - Quarto or LaTeX preferred, you can modify the files that produced this document)to the following prompts:
+
+### Imagine yourself as Dr. Rootman. Formulate responses to the following three questions.
+
+1.  What does one, complete, single observation look like?
+
+-   **One, complete observation would have the picture's flash position and lightning effect, along with the rating of that person's attractiveness**
+
+2.  If you measure this again, will you get the same answer?\
+
+-   **No, because every person's attractiveness is subjective, so the results of the analysis might be different if the experiment was repeated**
+
+3.  If we can answer your research questions, what will you do next?\
+
+-   **We would change the way we take photos for before/after to improve desirability for plastic surgery, so people would support our business**
+
+### Analysis
+
+You have been given access to the original Rootman data (it's the Excel file found in the link on the assignment page). You have also been given a modified form of the original data called "lighting_tall.tsv". Please use any of the formats or your own modified form of the data to produce two results (whatever language you wish to use, e.g., Python)
+
+1.  One data visualization
+
+```{r}
+library(tidyverse)
+library(readxl)
+```
+
+```{r}
+read_xlsx("./data/20201228perceptionOfAttractivenessRawData.xlsx")
+
+# Idea, we could create a plot that compares the age, race, sex to the average beauty score to measure biases
+```
+
+2.  One table of some sort (could be simple counts could be more complex like model output)
+
+```{r}
+# Idea: we could fit a model to see which of these features(age, race sex) actually have an effect on the beauty score and which categories are most sensitive 
+```
+
+These should fit into the context of the problem that Dr. Rootman wass seeking to solve. You could look at the graduate lab example that can be found with the Ruland reading as an encouragement.
+
+3.  Please record yourself (like your UCLA Story video) telling us a story about either your visualization OR your table (what is this result communicating to you and please communicate it to your viewer). Not both, choose one. The story might be really short (e.g., "this is a histogram of score")
+
+-   **Video attatched with submission**\*
+
+## What to turn in
+
+1.  A single PDF with your name somewhere answering the questions and providing either a visualization or a table. The PDF help your tell the story you want to tell (writing things out will be helpful before having to talk about the result on video).
+2.  A video recording (.mp4 or .mov work best)
+3.  The associated code that produced the PDF and the analysis (visualization code or table code). Quarto or \LaTeX or RMarkdown is preferred, but it is OK if you used something else, just include it as part of the submission (like a link).
+4.  This is due before the next meeting when we will see the team's answer.
+
+## Reminders
+
+1.  It's the story that is most important, the graphic and the table only lend support.
+2.  Your PDF does not need to be very long, a page or two is about all you need.
+3.  Your recording does not need to be very long, less than minute, but no penalties if it runs long.
+4.  It's OK to turn this in late, just upload it as a comment but remember, once I finish grading, it's a zero because reopening a completed assessment is a headache...
