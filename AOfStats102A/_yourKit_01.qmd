@@ -9,6 +9,7 @@ format:
   pdf:
     number-sections: true
     keep-tex: true
+echo: false
 ---
 
 ## Introduction
@@ -43,28 +44,47 @@ You have been given access to the original Rootman data (it's the Excel file fou
 
 1.  One data visualization
 
-```{r}
+```{r, results='hide', warning=FALSE, message=FALSE}
 library(tidyverse)
 library(readxl)
 ```
 
-```{r}
-read_xlsx("./data/20201228perceptionOfAttractivenessRawData.xlsx")
+```{r results='hide'}
+data <- read_xlsx("./data/20201228perceptionOfAttractivenessRawData.xlsx")
+#ncol(data)
+#which(colnames(data)=="A1")
+#df$sumrow <- rowSums(data[], na.rm = TRUE)
+avg <- data %>%
+  select(18:77) %>%
+  mutate(Avg = rowSums(.) / 60) %>%
+  select('Avg')
 
-# Idea, we could create a plot that compares the age, race, sex to the average beauty score to measure biases
+vec <- pull(avg, Avg)
+
+data <- data %>% 
+  mutate(avg = vec)
+```
+
+```{r}
+# We can create a plot that compares the race to the average beauty score to measure biases
+
+ggplot(data, mapping = aes(x = Race, y = avg, colour = Race)) + geom_boxplot() +
+  theme(axis.text.x = element_blank()) + ggtitle("Average Beauty Rating vs Race")
 ```
 
 2.  One table of some sort (could be simple counts could be more complex like model output)
 
 ```{r}
-# Idea: we could fit a model to see which of these features(age, race sex) actually have an effect on the beauty score and which categories are most sensitive 
+# Idea: we could fit a model to see which of these features(age, race, race_other, sex) actually have a statistically significant effect on the average beauty score to see which categories are most sensitive 
+m1 <- lm(data = data, avg ~ as.numeric(Age) + Sex)
+summary(m1)
 ```
 
 These should fit into the context of the problem that Dr. Rootman wass seeking to solve. You could look at the graduate lab example that can be found with the Ruland reading as an encouragement.
 
 3.  Please record yourself (like your UCLA Story video) telling us a story about either your visualization OR your table (what is this result communicating to you and please communicate it to your viewer). Not both, choose one. The story might be really short (e.g., "this is a histogram of score")
 
--   **Video attatched with submission**\*
+-   **Video attached with submission**\*
 
 ## What to turn in
 

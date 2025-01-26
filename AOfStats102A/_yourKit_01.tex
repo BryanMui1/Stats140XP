@@ -66,46 +66,6 @@
 \fi
 \makeatother
 
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{241,243,245}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
-\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
@@ -201,13 +161,13 @@
 \makeatother
 \subtitle{Mini Workshop}
 \author{Bryan Mui - UID 506021334}
-\date{January 23, 2025}
+\date{January 25, 2025}
 
 \begin{document}
 \maketitle
 
 
-\subsection{Introduction}\label{introduction}
+\section{Introduction}\label{introduction}
 
 We assume you have already viewed a ``client interview'' (or, client
 discovery) video featuring Professor Esfandiari and Dr.~Rootman.
@@ -217,7 +177,7 @@ individual assignments. For this part, please read Ruland's First and
 Second Questions in the book ``Guide for the New Statistical
 Consultant''.
 
-\subsection{Your Work}\label{your-work}
+\section{Your Work}\label{your-work}
 
 Make sure to include your name on your submission. Your student ID is
 not necessary.
@@ -226,8 +186,8 @@ Please submit answers as PDF output (include the scripts that produced
 them - Quarto or LaTeX preferred, you can modify the files that produced
 this document)to the following prompts:
 
-\subsubsection{Imagine yourself as Dr.~Rootman. Formulate responses to
-the following three
+\subsection{Imagine yourself as Dr.~Rootman. Formulate responses to the
+following three
 questions.}\label{imagine-yourself-as-dr.-rootman.-formulate-responses-to-the-following-three-questions.}
 
 \begin{enumerate}
@@ -277,7 +237,7 @@ questions.}\label{imagine-yourself-as-dr.-rootman.-formulate-responses-to-the-fo
   business}
 \end{itemize}
 
-\subsubsection{Analysis}\label{analysis}
+\subsection{Analysis}\label{analysis}
 
 You have been given access to the original Rootman data (it's the Excel
 file found in the link on the assignment page). You have also been given
@@ -292,65 +252,7 @@ produce two results (whatever language you wish to use, e.g., Python)
   One data visualization
 \end{enumerate}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{library}\NormalTok{(tidyverse)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
--- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
-v dplyr     1.1.4     v readr     2.1.5
-v forcats   1.0.0     v stringr   1.5.1
-v ggplot2   3.5.1     v tibble    3.2.1
-v lubridate 1.9.4     v tidyr     1.3.1
-v purrr     1.0.2     
--- Conflicts ------------------------------------------ tidyverse_conflicts() --
-x dplyr::filter() masks stats::filter()
-x dplyr::lag()    masks stats::lag()
-i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{library}\NormalTok{(readxl)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{read\_xlsx}\NormalTok{(}\StringTok{"./data/20201228perceptionOfAttractivenessRawData.xlsx"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-# A tibble: 200 x 77
-   ResponseId  StartDate           EndDate             Status IPAddress Progress
-   <chr>       <dttm>              <dttm>              <chr>  <chr>        <dbl>
- 1 R_2QVUTvHQ~ 2020-08-10 20:57:02 2020-08-10 21:02:27 IP Ad~ 100.14.1~      100
- 2 R_sNA0Y7Wi~ 2020-08-10 14:26:38 2020-08-10 14:29:55 IP Ad~ 100.7.25~      100
- 3 R_3mjH4mWb~ 2020-08-10 20:06:48 2020-08-10 20:14:34 IP Ad~ 103.104.~      100
- 4 R_1lsGctLd~ 2020-08-10 18:18:03 2020-08-10 18:24:40 IP Ad~ 103.110.~      100
- 5 R_3HztxfUf~ 2020-08-11 02:16:52 2020-08-11 02:21:06 IP Ad~ 103.114.~      100
- 6 R_1LcJ6mHu~ 2020-08-10 23:13:41 2020-08-10 23:19:53 IP Ad~ 103.195.~      100
- 7 R_24AA1Mkw~ 2020-08-10 20:16:42 2020-08-10 20:24:14 IP Ad~ 103.217.~      100
- 8 R_1n1s1OG3~ 2020-08-10 22:48:25 2020-08-10 22:56:11 IP Ad~ 103.40.1~      100
- 9 R_YRBYV14t~ 2020-08-10 21:28:30 2020-08-10 21:34:29 IP Ad~ 103.59.2~      100
-10 R_268Xe6r6~ 2020-08-10 23:37:16 2020-08-10 23:45:27 IP Ad~ 103.93.1~      100
-# i 190 more rows
-# i 71 more variables: `Duration (in seconds)` <dbl>, Finished <chr>,
-#   RecordedDate <dttm>, LocationLatitude <dbl>, LocationLongitude <dbl>,
-#   DistributionChannel <chr>, UserLanguage <chr>, Age <chr>, Race <chr>,
-#   Race_other <chr>, Sex <chr>, A1 <dbl>, A2 <dbl>, A3 <dbl>, A4 <dbl>,
-#   A5 <dbl>, A6 <dbl>, B1 <dbl>, B2 <dbl>, B3 <dbl>, B4 <dbl>, B5 <dbl>,
-#   B6 <dbl>, D1 <dbl>, D2 <dbl>, D3 <dbl>, D4 <dbl>, D5 <dbl>, D6 <dbl>, ...
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Idea, we could create a plot that compares the age, race, sex to the average beauty score to measure biases}
-\end{Highlighting}
-\end{Shaded}
+\pandocbounded{\includegraphics[keepaspectratio]{_yourKit_01_files/figure-pdf/unnamed-chunk-3-1.pdf}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -361,11 +263,27 @@ i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all confl
   like model output)
 \end{enumerate}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Idea: we could fit a model to see which of these features(age, race sex) actually have an effect on the beauty score and which categories are most sensitive }
-\end{Highlighting}
-\end{Shaded}
+\begin{verbatim}
+
+Call:
+lm(formula = avg ~ as.numeric(Age) + Sex, data = data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.4132 -0.6377  0.0044  0.7483  3.5505 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)     5.050835   0.401958  12.566   <2e-16 ***
+as.numeric(Age) 0.003794   0.008751   0.434    0.665    
+SexMale         0.219558   0.182310   1.204    0.230    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 1.171 on 197 degrees of freedom
+Multiple R-squared:  0.007412,  Adjusted R-squared:  -0.002665 
+F-statistic: 0.7355 on 2 and 197 DF,  p-value: 0.4806
+\end{verbatim}
 
 These should fit into the context of the problem that Dr.~Rootman wass
 seeking to solve. You could look at the graduate lab example that can be
@@ -386,10 +304,10 @@ found with the Ruland reading as an encouragement.
 \begin{itemize}
 \tightlist
 \item
-  \textbf{Video attatched with submission}*
+  \textbf{Video attached with submission}*
 \end{itemize}
 
-\subsection{What to turn in}\label{what-to-turn-in}
+\section{What to turn in}\label{what-to-turn-in}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -411,7 +329,7 @@ found with the Ruland reading as an encouragement.
   answer.
 \end{enumerate}
 
-\subsection{Reminders}\label{reminders}
+\section{Reminders}\label{reminders}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
