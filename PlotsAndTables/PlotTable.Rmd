@@ -1,0 +1,96 @@
+---
+title: "Plot and Table for EV data"
+author: "Anish Deshpande, Bryan Mui, Cameryn Harvey, Kylie Linden, Sue Tang, Zixuan Liu"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+### Team Photo:
+
+**Insert Image Here**
+
+
+
+```{r, message=FALSE, include=FALSE, echo=FALSE}
+# import libraries:
+library(tidyverse)
+library(ggplot2)
+library(sf)
+```
+
+
+### Read in Data:
+
+```{r}
+# read EV data:
+EV_data <- read_csv("_data/EV2025_01.csv", show_col_types = FALSE)
+
+# read county demographics data
+county_demog <- read_csv("_data/county_demog.csv", show_col_types = FALSE)
+county_demog <- county_demog %>% mutate(total_pop = Pop_18_24 + Pop_25_over)
+
+# read geo data
+geo_basemap <- st_read("_data/wa_counties.geojson")
+geo_basemap <- geo_basemap %>%
+  mutate(JURISDICT_NM = gsub(" County$", "", JURISDICT_NM)) %>%
+  rename(County = JURISDICT_NM)
+
+# merge demographics data and geographic data
+merged_data <- geo_basemap %>% left_join(county_demog, by = "County")
+```
+
+
+# Graphic:
+
+```{r}
+# find number of EVs per county:
+EV_per_county <- EV_data %>%
+  group_by(County) %>%            # Group the data by County
+  summarise(EV_count = n()) %>%   # Count the number of rows for each county
+  arrange(desc(EV_count)) %>%
+  filter(County %in% geo_basemap$County)
+
+merged_data <- merged_data %>% 
+  left_join(EV_per_county, by = "County") %>%
+  mutate(EV_per_person = EV_count / total_pop) %>%
+  arrange(EV_per_person)
+```
+
+
+
+```{r}
+# plot EVs per person ratio for each county:
+ggplot(data = merged_data, mapping = aes(x = reorder(County, -EV_per_person), y = EV_per_person)) + 
+  geom_bar(stat = "identity", fill = "skyblue", color = "black") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(
+    title = "Electric Vehicles per person by County in Washington",
+    x = "County",
+    y = "EVs per person"
+  )
+```
+
+```{r}
+# create a heatmap of the same thing:
+ggplot(data = merged_data) +
+  geom_sf(aes(fill = EV_per_person), color = "white") +  # Fill counties by EV_per_person
+  scale_fill_viridis_c(option = "plasma", name = "EVs per Person") +  # Use viridis color scale
+  labs(
+    title = "Heatmap of EVs per Person by County",
+    subtitle = "Electric Vehicles per Person Across Washington State",
+    caption = "Data Source: EV_data and county_demog"
+  )
+```
+
+# Table:
+
+
+
+
+
+
