@@ -1,0 +1,14 @@
+---
+title: "Which Test?"
+author: "Bryan Mui -- UID 506021334"
+format: pdf
+editor: visual
+---
+
+## Score
+
+3/10
+
+## Reflection
+
+I believe I did not learn about the majority of these tests when I took Stats 101B with Almohawas Akram. I would need to study and re-learn all of these tests and study up on specifically which tests to use in which scenarios and what factors make the test viable/not viable. I think this is important especially for a statistics consultant to be able to identify which direction to test once given a real life problem.
