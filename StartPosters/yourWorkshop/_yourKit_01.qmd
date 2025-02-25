@@ -1,0 +1,60 @@
+---
+title: "Start Your Posters"
+subtitle: "Statistical Consulting for Data Scientists"
+author: "Due 02/24/2025 by 11:59pm"
+format: 
+  pdf:
+    geometry:
+      - top=-0.10in
+      - left=1.00in
+      - right=1.00in
+      - bottom=1.00in
+    latex-engine: xelatex 
+    fontsize: 12pt
+    mainfont: TeX Gyre Pagella
+    sansfont: TeX Gyre Pagella
+    mainfontoptions:
+      - Numbers=Lowercase
+      - Numbers=Proportional    
+    number-sections: false
+    keep-tex: true
+---
+```{=latex}
+\vspace{-0.75in}
+\author{}
+\pagenumbering{gobble}
+```
+
+## Introduction
+
+Done as a team.  Please appoint one person to take notes (or refer to prior notes) on what the team likes in a poster.  If  your team is clever, you can include the notes in the poster.  Otherwise notes are just for your records, no need to turn them in.
+
+Please choose at least one of the templates (they can be found in  the \_docs folder) and copy and modify it. 
+
+The available templates can  be found in the following folders within the \_docs folder, we recommend downloading the entire folder to insure correct formatting.:
+
+- betterPoster (has been tested on Overleaf)
+- betterPoster_RMarkdown (has been tested in RStudio)
+- DoStemplate (has been tested on Overleaf)
+- Jacobs_RMarkdown (has been tested in RStudio)
+- quarto_typst (has been tested in RStudio  & VS Code but need to add a quarto extension to make work see https://github.com/quarto-ext/typst-templates/tree/main/poster)
+
+You may need to run the following two lines at the console prompt in R in order to get betterPoster_RMarkdown to render:
+
+```
+install.packages("devtools")
+devtools::install_github("gerkelab/betterposter")
+```
+
+## Your Work
+
+Please upload your team's attempt at getting a poster started **today** by rendering a modified poster template and the poster output (PDF) should have your team photo on it and your names, that's all.  I just need to know that a poster will render on at least one of your computers.
+
+The remainder are some suggested modifications:
+
+- Please attempt as many of the following modifications as you are able
+    - Modified Title
+    - Modify a section title
+    - Modify text or add a paragraph of text to the body  of the poster
+
+

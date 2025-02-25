@@ -1,0 +1,225 @@
+\documentclass[landscape,a0paper,fontscale=0.34]{baposter}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+%\usepackage{amsaddr} % to allow inclusion of institution address
+%\usepackage{charter}
+\usepackage{enumitem}
+%\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{floatrow}  % to place graph and caption side by side
+\usepackage{multicol}
+\usepackage{listings}
+
+
+%\usepackage{tikz}
+%\usepackage{tkz-graph}
+
+%\usepackage{subcaption} % for better subcaptions
+%\usepackage{verbatim}   % for comment environment
+%\usepackage{booktabs}   % for publication-quality tables
+%\usepackage{algorithm}  % for the algorithm environment
+%\usepackage[flushleft, online]{threeparttable} % for table footnotes
+%\usepackage{grffile}
+
+%\usepackage[usenames,dvipsnames]{color} % for highlighting / strikethroughs
+%\usepackage{multicol}
+%\definecolor{boxcolour}{RGB}{120,245,230}
+\definecolor{boxcolour}{RGB}{191, 250, 238}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Multicol Settings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\columnsep}{0.7em}
+\setlength{\columnseprule}{0mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Save space in lists. Use this after the opening of the list
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\xcompresslist}{%
+ \setlength{\itemsep}{1pt}%
+ \setlength{\parskip}{0pt}%
+ \setlength{\parsep}{0pt}%
+}
+
+\newcommand{\compresslist}{%
+ \setlength{\itemsep}{5pt}%
+ \setlength{\parskip}{0pt}%
+ \setlength{\parsep}{0pt}%
+}
+
+\newcommand{\compresslistless}{%
+ \setlength{\itemsep}{3.25pt}%
+ \setlength{\parskip}{0pt}%
+ \setlength{\parsep}{0pt}%
+}
+
+%Special for paper
+\def\phi{\varphi}
+\def\by{\mathbf{y}}
+\def\bs{\mathbf{\sigma}}
+\def\bX{\mathbf{X}}
+\def\bB{\mathbf{B}}
+\def\bPhi{\mathbf{\Phi}}
+\def\brho{\mathbf{\rho}}
+\def\pl{p_\lambda}
+\def\pln{p_{\lambda_n}}
+\def\G{\mathcal{G}}
+\def\rto{\leftarrow}
+\def\s{\sigma}
+\def\o{\omega}
+\def\A{\mathcal{A}}
+\renewcommand{\th}{\theta}
+%\renewcommand{\thh}{\hat{\theta}}
+\newcommand{\bth}{\boldsymbol\theta}
+\renewcommand{\b}{\beta}
+\newcommand{\hb}{\hat{\beta}}
+\newcommand{\hbB}{\widehat{\mathbf{B}}}
+\newcommand{\hB}{\widehat{B}}
+\newcommand{\hO}{\widehat{\Omega}}
+\newcommand{\hP}{\widehat{\Phi}}
+\newcommand{\hR}{\widehat{R}}
+\newcommand{\hT}{\widehat{\Theta}}
+\newcommand{\one}{\mathbf{1}}
+\def\bn{\boldsymbol\nu}
+\def\bu{\mathbf{u}}
+\newcommand{\tB}[1]{\widetilde{B}(#1)}
+\newcommand{\tOm}[1]{\widetilde{\Omega}(#1)}
+
+%%%%%%%%%%%%%%
+\def\estperm{\widehat{\pi}}
+\def\dagadjest{\widehat{B}}
+\def\goodperm{\pi_{0}}
+\def\penderiv{\rho_\lambda'(0+)}
+
+
+\definecolor{test}{rgb}{0,50,0}
+\newcommand{\cemph}[1]{\textcolor{cyan!80!blue}{#1}}
+\newcommand{\ccemph}[1]{\textcolor{magenta}{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Begin of Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Here starts the poster
+%%---------------------------------------------------------------------------
+%% Format it to your taste with the options
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{poster}{
+ % Show grid to help with alignment
+ grid=false,
+ columns=3,
+ % Column spacing
+ colspacing=1em,
+ % Color style
+ headerColorOne=boxcolour, %gray!20!white!90!black,
+ borderColor=boxcolour,
+ % Format of textbox
+ textborder=rectangle,
+ linewidth=0.25mm,
+ % Format of text header
+ headerborder=closed,
+ headershape=rectangle,
+ headershade=plain,
+ headerfont=\large\rmfamily\bf,
+ background=none,
+ bgColorOne=gray!90!black,
+ boxColorOne=white,
+ headerheight=0.12\textheight}
+ % Eye Catcher
+ {
+ % empty
+     
+ }
+ % Title
+ {\huge Poster Title}
+ % Authors
+{Ronald A. Fisher \\[0.2em]{(*\texttt{xxx@stat.ucla.edu})}}
+ % University logo
+ {
+  \begin{tabular}{c}
+    \includegraphics[height=0.09\textheight]{ps_statistics_DoS}%{ucla_cw}
+  \end{tabular}
+ }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Now define the boxes that make up the poster
+%%%---------------------------------------------------------------------------
+%%% Each box has a name and can be placed absolutely or relatively.
+%%% The only inconvenience is that you can only specify a relative position 
+%%% towards an already declared box. So if you have a box attached to the 
+%%% bottom, one to the top and a third one which should be inbetween, you 
+%%% have to specify the top and bottom boxes before you specify the middle 
+%%% box.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headerbox{Objectives \& Motivations}{name=problem,column=0,row=0,span=1}{
+	\compresslistless
+	\begin{itemize}
+		\item Develop novel and modern techniques in high-dimensional statistics and sparse regularization for structure learning of Bayesian networks (BNs) from big data.
+		\item Inspired by applications in computational biology, e.g., construction of gene networks from high-throughput genomic data. Hence, focused on methods that scale to thousands of variables for both continuous and discrete data.
+	\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \headerbox{High-Dimensonal Theory}{name=theory, column=0, span=1, below=problem}{
+% Theory part of high-dimensional Bayesian networks (BNs).
+% }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headerbox{Penalized Likelihood and High-D Theory}{name=framework, column=0, row=0, span=1, below=problem}{
+%\begin{wrapfigure}{r}{4cm}
+
+%\end{wrapfigure}
+\begin{minipage}{.75\textwidth}
+	\begin{itemize}
+		\xcompresslist
+		\item $n$ i.i.d. observations of $X=(X_1,\ldots,X_p)$; \\ adding interventions for causal learning is possible.
+		\item Bayesian network (BN) for $X$, parameterized by coefficients $B:=(\beta_{ij})$, interpreted as a weighted adjacency matrix, \emph{always a directed acyclic graph (DAG)}.
+		\item Item ...
+	
+	\end{itemize}
+\end{minipage}
+\begin{minipage}{.2\textwidth}
+	%\includegraphics[scale=.85]{figs/dag_example2.pdf}
+\end{minipage}
+
+
+
+\textbf{Theory:} High-D regime, $p\gg n\to\infty$, degree-growth $d \log p/ n = o(1)$,
+\begin{enumerate}%[leftmargin=0cm, itemindent=.5cm, itemsep=0em]
+	\compresslistless
+	\item \textbf{Deviation bounds:} 
+	
+	\item \textbf{Sparsity bounds:} 
+	\item \textbf{Model selection consistency:} 
+	
+	\item \textbf{Uniform control of SEM coeffs.:} All estimated DAGs $\widehat B(\pi)$ are close to their true DAG $\widetilde{B}(\pi)$, for all orderings $\pi$. Leveraged \cemph{lattice property} of neighborhood regression and led to study of abstract neighborhood regression and connections with PCGs and their algebraic  properties. 
+\end{enumerate}
+
+}
+
+\headerbox{PCGs and neighborhood regression}{name=pcg,column=1, row=0, span=1}{
+	\begin{itemize}
+		\xcompresslist
+		\item General framework for studying \cemph{neighborhood regression}. Regressing $X_j$ on a subset $S$ of the rest of variables $X_S = \{X_i, i \in S\}$:
+		
+		\item \cemph{Partial correlation graphs (PCGs)}: Natural setting for studying these relations. General setup in a Hilbert space. Express everything in terms of
+		\end{itemize}
+		
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\headerbox{References}{name=software,column=2,span=1, below = discrete}{
+\headerbox{References}{name=software,column=0,span=1, below = framework}{
+\small
+Paper 1 \\
+ Paper 2\\
+Preprint 1, arXiv:xxxx.
+
+}
+
+\end{poster}%
+\end{document}

@@ -1,0 +1,100 @@
+---
+title: "The Crime Victims of LA: How Do We Know Who’s Next?"
+format:
+  poster-typst: 
+    size: "36x24"
+    poster-authors: "Bryan, Jade, Clark, Jeremy, Tiffany, Zijia"
+    departments: "Department of Statistics & Data Science"
+    institution-logo: "./images/header.png"
+    univ-logo-scale: "150"
+    footer-text: "Fall 2024 Stats 140XP"
+    footer-url: "https://statistics.ucla.edu/"
+    footer-emails: "helloworld@stat.ucla.edu"
+    footer-color: "2774AE"
+    footer-textcolor: "FFFFFF"
+    keywords: ["Typesetting", "Typst", "Quarto"]
+---
+
+# Genesis Chapter 1(LSB)
+
+Creation
+In the beginning God created the heavens and the earth. 2 And the earth was formless and void, and darkness was over the surface of the deep, and the Spirit of God was hovering over the surface of the waters. 3 Then God said, “Let there be light”; and there was light. 4 And God saw that the light was good; and God separated the light from the darkness. 5 And God called the light day, and the darkness He called night. And there was evening and there was morning, one day. 6 Then God said, “Let there be an expanse in the midst of the waters, and let it separate the waters from the waters.” 7 So God made the expanse and separated the waters which were below the expanse from the waters which were above the expanse; and it was so. 8 And God called the expanse heaven. And there was evening and there was morning, a second day. 9 Then God said, “Let the waters below the heavens be gathered into one place, and let the dry land appear”; and it was so. 10 And God called the dry land earth, and the gathering of the waters He called seas; and God saw that it was good. 11 Then God said, “Let the earth sprout vegetation, plants yielding seed, and fruit trees on the earth bearing fruit after their kind with seed in them”; and it was so. 12 And the earth brought forth vegetation, plants yielding seed after their kind, and trees bearing fruit with seed in them, after their kind; and God saw that it was good. 13 And there was evening and there was morning, a third day. 14 Then God said, “Let there be lights in the expanse of the heavens to separate the day from the night, and let them be for signs and for seasons and for days and years; 15 and let them be for lights in the expanse of the heavens to give light on the earth”; and it was so. 16 So God made the two great lights, the greater light to rule the day, and the lesser light to rule the night, and also the stars. 17 And God placed them in the expanse of the heavens to give light on the earth, 18 and to rule the day and the night, and to separate the light from the darkness; and God saw that it was good. 19 And there was evening and there was morning, a fourth day. 20 Then God said, “Let the waters swarm with swarms of living creatures, and let birds fly above the earth across the face of the expanse of the heavens.” 21 And God created the great sea monsters and every living creature that moves, with which the waters swarmed after their kind, and every winged bird after its kind; and God saw that it was good. 22 Then God blessed them, saying, “Be fruitful and multiply, and fill the waters in the seas, and let the birds multiply on the earth.” 23 And there was evening and there was morning, a fifth day. 24 Then God said, “Let the earth bring forth living creatures after their kind: cattle and creeping things and beasts of the earth after their kind”; and it was so. 25 God made the beasts of the earth after their kind, and the cattle after their kind, and every creeping thing of the ground after its kind; and God saw that it was good. 26 Then God said, “Let Us make man in Our image, according to Our likeness, so that they will have dominion over the fish of the sea and over the birds of the sky and over the cattle and over all the earth and over every creeping thing that creeps on the earth.” 27 And God created man in His own image, in the image of God He created him; male and female He created them. 28 God blessed them, and God said to them, “Be fruitful and multiply, and fill the earth, and subdue it; and have dominion over the fish of the sea and over the birds of the sky and over every living thing that creeps on the earth.” 29 Then God said, “Behold, I have given to you every plant yielding seed that is on the surface of all the earth, and every tree which has the fruit of the tree yielding seed; it shall be food for you; 30 and to every beast of the earth and to every bird of the sky and to every thing that creeps on the earth which has life, I have given every green plant for food”; and it was so. 31 And God saw all that He had made, and behold, it was very good. And there was evening and there was morning, the sixth day. 
+
+![Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.](./images/king-tiglath-pileser-iii-2477.jpg){width="30%"}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. Quod idem licet transferre in voluptatem, ut postea variari voluptas distinguique possit, augeri amplificarique non pos- sit. At.
+
+# Lorem ipsum
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+
+1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. Quod idem licet transferre in voluptatem, ut.
+
+| Lorem ipsum dolor sit. | Lorem ipsum. | Lorem ipsum. |
+|------------------------|--------------|--------------|
+| Lorem ipsum dolor.     | Lorem ipsum. | $\alpha$     |
+| Lorem ipsum.           | Lorem ipsum. | $\beta$      |
+| Lorem.                 | Lorem.       | $\gamma$     |
+| Lorem ipsum dolor.     | Lorem.       | $\theta$     |
+
+: Lorem ipsum dolor sit amet {#tbl-1}
+
+Lorem @tbl-1 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. Quod idem licet transferre in voluptatem, ut postea variari voluptas distinguique possit, augeri amplificarique non possit. At etiam Athenis, ut e patre audiebam facete et urbane Stoicos irridente, statua est in quo a nobis philosophia defensa et.
+
+## Team photo
+
+This is our team photo. Our team consists of 7 members! 
+
+![This is our goofy team photo!](./images/team_photo.jpg)
+
+# Lorem ipsum dolor.
+
+::: {.block fill="yellow" inset="8pt" radius="4pt"}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. Quod idem licet transferre in voluptatem, ut postea variari voluptas distinguique possit, augeri amplifi- carique non possit. At etiam Athenis, ut e patre audiebam facete et urbane Stoicos irridente, statua est in quo a nobis philosophia defensa et.
+
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+
+:::
+
+## Lorem ipsum etiam
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. 
+
+## Lorem ipsum possimus
+
+Quod idem licet transferre in voluptatem, ut postea variari voluptas distinguique possit, augeri amplificarique non possit. At etiam Athenis, ut e patre audiebam facete et urbane Stoicos irridente, statua est in quo a nobis philosophia defensa et collaudata est, cum id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, om- nis dolor repellendus. Temporibus autem quibusdam et.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. 
+
+```{r echo = FALSE, message = FALSE, warning = FALSE, fig.height=8, fig.width=12}
+library(ggplot2)
+library(gridExtra)
+ 
+g1 <- ggplot(mtcars, aes(x=qsec)) + geom_density(fill="#2774AE")
+g2 <- ggplot(mtcars, aes(x=drat, y=qsec, color=cyl)) + geom_point(size=5) + theme(legend.position="none")
+g3 <- ggplot(mtcars, aes(x=factor(cyl), y=qsec, fill=cyl)) + geom_boxplot() + theme(legend.position="none")
+g4 <- ggplot(mtcars , aes(x=factor(cyl), fill=factor(cyl))) +  geom_bar()
+ 
+grid.arrange(g2, arrangeGrob(g3, g4, ncol=2), nrow = 2)
+```
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. Quod idem licet transferre in voluptatem, ut postea variari voluptas distinguique possit, augeri amplificarique non possit. At etiam Athenis, ut e patre audiebam facete et urbane Stoicos irridente, statua est in quo a nobis philosophia defensa et collaudata est, cum id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, om- nis dolor repellendus. Temporibus autem quibusdam et.
+
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+  - Lorem ipsum dolor sit amet.
+  -  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed. 
+  - Lorem ipsum dolor sit amet, consectetur adipiscing.
+
+$$
+	\left(a+b\right)\left[1-\frac{b}{a+b}\right]=a\,,
+$$
